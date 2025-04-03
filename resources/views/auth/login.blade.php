@@ -5,14 +5,14 @@
     <form method="POST" action="{{ route('login') }}">
         @csrf
 
-        <!-- Email Address noi dung hay hello ban-->
+        <!-- Email Address-->
         <div>
             <x-input-label for="email" :value="__('Email')" />
             <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
-         <!-- Age 20 tuoi be sung trau-->
+         <!-- Age-->
          <div>
             <x-input-label for="age" :value="__('Age')" />
             <x-text-input id="age" class="block mt-1 w-full" type="text" name="age" :value="old('age')" required autofocus autocomplete="username" />
