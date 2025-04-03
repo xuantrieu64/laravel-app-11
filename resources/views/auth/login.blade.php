@@ -12,7 +12,7 @@
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
-         <!-- Age -->
+         <!-- Age 20 tuoi be sung trau-->
          <div>
             <x-input-label for="age" :value="__('Age')" />
             <x-text-input id="age" class="block mt-1 w-full" type="text" name="age" :value="old('age')" required autofocus autocomplete="username" />
